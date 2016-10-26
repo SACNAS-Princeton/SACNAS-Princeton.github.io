@@ -91,8 +91,13 @@ $baseurl: '{{ site.baseurl }}/images';
 		font-style: italic;
 	}
 
+	.hashtags {
+		color: #34495e;
+	}
+	
 	p {
 		margin: 0 0 _size(element-margin) 0;
+
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -505,6 +510,10 @@ $baseurl: '{{ site.baseurl }}/images';
 
 /* Image */
 
+	.profile-img {
+		border-radius: 75px;
+	}
+
 	.image {
 		border-radius: 3px;
 		border: 0;
@@ -900,13 +909,13 @@ $baseurl: '{{ site.baseurl }}/images';
 			text-align: left;
 			width: 50%;
 
-			@for $i from 1 through _misc(max-features) {
-				$j: 0.035 * $i;
+			// @for $i from 1 through _misc(max-features) {
+			// 	$j: 0.035 * $i;
 
-				&:nth-child(#{$i}) {
-					background-color: rgba(0,0,0, $j);
-				}
-			}
+			// 	&:nth-child(#{$i}) {
+			// 		background-color: rgba(0,0,0, $j);
+			// 	}
+			// }
 
 			&:before {
 				display: block;
@@ -1248,7 +1257,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 
 		&.style3 {
-			@include wrapper(accent5);
+			@include wrapper(accent8);
 		}
 
 		&.style4 {
