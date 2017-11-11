@@ -11,18 +11,15 @@
 
   <body>
 
-    <!-- Page Wrapper -->
-    <div id="page-wrapper">
+    {% include header.html %}
 
-      {% include header.html %}
-
-      {{ content }}
-
-      {% include footer.html %}
-
-      {% include scripts.html %}
-
+    <div id="page-content">
+      <div class="wrapper" id = "page-wrapper">
+        {{ content }}
+      </div>
     </div>
+
+    {% include footer.html %}
 
   </body>
 
